@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ProyectFinal</title>
+</head>
+<header>
+    <div class="lisnav">
+        <a href="#new">New Producto</a>
+        <a href="#ayuda">Help</a>
+        <a href="#comprar">Shop</a>
+        <a href="#acerca">About</a>
+        <a href="#inicio">Home</a>
+    </div>
+</header>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <h2 id=titulo1>New Product</h2>
+            <hr>
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row1">
+                        <div class="column1a">
+                            <label for="nomeproduct">New Product</label>
+                        </div>
+                        <div class="column1b">
+                            <input type="text" id="nproduct" name="nameproduct" placeholder="Mochila Preta..">
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="column1a">
+                            <label for="preço">Preço</label>
+                        </div>
+                        <div class="column1b">
+                            <input type="text" id="pproduct" name="preçoproduct" placeholder="R$900..">
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="column1a">
+                            <label for="subject">Descriçao</label>
+                        </div>
+                        <div class="column1b">
+                            <textarea id="subject" name="subject" placeholder="Conte um poco sobre o Producto.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2 id=titulo2>Product Picture</h2>
+            <hr>
+            <div class="container2">
+                <div class="row1">
+                    <div class="flex-container">
+                        <div><input id=file type="file" name="imagen" /></div>
+                    </div>
+                    <div class="column2b">
+                        <form id=imagen name="subida-imagenes" type="POST" enctype="multipart/formdata">
+                            <input id=enviar type="submit" name="subir-imagen" value="Select Image" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="lisnavf">
+        <a href="#new">New Producto</a>
+        <a href="#ayuda">Help</a>
+        <a href="#comprar">Shop</a>
+        <a href="#acerca">About</a>
+        <a href="#inicio">Home</a>
+    </div>
+</footer>
+</body>
+</html>
